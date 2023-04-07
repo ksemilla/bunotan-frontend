@@ -8,12 +8,12 @@ const Home = () => {
         <h1 className="text-4xl">BUNOTAN</h1>
       </div>
       <div className="space-y-5 flex flex-col h-screen justify-center items-center">
-        <Link to="/register">
+        <Link to="/register", className="flex">
           <button className="py-2 px-6 bg-blue-500 inline-block text-3xl">
             Register
           </button>
         </Link>
-        <Link to="/login">
+        <Link to="/login", className="flex">
           <div className="py-2 px-6 bg-blue-500 inline-block text-3xl">
             Log In
           </div>
