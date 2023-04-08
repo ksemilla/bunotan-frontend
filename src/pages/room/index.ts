@@ -1,5 +1,5 @@
 import RoomList from "./list";
 import RoomDetail from "./detail";
-import Jebaited from "./jebaited";
+import MyRooms from "./myrooms";
 
-export { RoomList, RoomDetail, Jebaited };
+export { RoomList, RoomDetail, MyRooms };
