@@ -18,6 +18,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  background-color: rgb(148 163 184)
+}
+
 /* a {
   font-weight: 500;
   color: #646cff;
