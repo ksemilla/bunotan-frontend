@@ -1,26 +1,22 @@
 import { Link } from "react-router-dom";
-
+import { Button } from "../../components";
 
 const Home = () => {
-  return <>
-    <div className="bg-slate-400 h-window">
-      <div className="p-2 bg-slate-500 inline-block">
-        <h1 className="text-4xl">BUNOTAN</h1>
+  return (
+    <div className="bg-slate-400 min-h-screen flex flex-col">
+      <div>
+        <h1 className="p-2 text-4xl bg-slate-500 inline-block">BUNOTAN</h1>
       </div>
-      <div className="space-y-5 flex flex-col h-screen justify-center items-center">
-        <Link to="/register" className="flex">
-          <button className="py-2 px-6 bg-blue-500 inline-block text-3xl">
-            Register
-          </button>
+      <div className="space-y-5 flex-1 flex flex-col justify-center items-center">
+        <Link to="/register">
+          <Button>Register</Button>
         </Link>
-        <Link to="/login" className="flex">
-          <div className="py-2 px-6 bg-blue-500 inline-block text-3xl">
-            Log In
-          </div>
+        <Link to="/login">
+          <Button>Log in</Button>
         </Link>
       </div>
     </div>
-  </>
+  );
 };
 
 export default Home;
