@@ -1,48 +1,27 @@
+import { RegisterInput, RegisterLabel, RegisterSpan } from "../../components"
+
 const Register = () => {
   return <>
     <form>
       <div className="h-screen flex flex-col h-screen justify-center">
-        <span>
-          <div className="mb-6 flex items-center justify-center">
-            <label for="email" className="font-medium text-gray-900">
-              Email Address
-            </label>
-            <input 
-              type="email"
-              id="email" 
-              className="rounded-lg p-2 ml-2" 
-              placeholder="user@email.com"
-              required 
-            />
-          </div>
-        </span>
-        <span>
-          <div className="mb-6 flex items-center justify-center">
-            <label for="password" className="font-medium text-gray-900">
-              Your password
-            </label>
-            <input 
-              type="password" 
-              id="password" 
-              placeholder="min. of 8 characters"
-              className="rounded-lg p-2 ml-2" 
-              required 
-            />
-          </div>
-        </span>
-        <span>
-          <div className="mb-6 flex items-center justify-center">
-            <label for="repeat-password" className="font-medium text-gray-900">
-              Repeat password
-            </label>
-            <input 
-              type="password" 
-              id="repeat-password" 
-              className="rounded-lg p-2 ml-2" 
-              required 
-            />
-          </div>
-        </span>
+        <RegisterSpan>
+          <RegisterLabel for="email">
+            Email Address
+          </RegisterLabel>
+          <RegisterInput type="email" id="email" placeholder="user@email.com" />
+        </RegisterSpan>
+        <RegisterSpan>
+          <RegisterLabel for="password">
+            Your password
+          </RegisterLabel>
+          <RegisterInput type="password" id="password" placeholder="min. of 8 characters" />
+        </RegisterSpan>
+        <RegisterSpan>
+          <RegisterLabel for="repeat-password">
+            Repeat password
+          </RegisterLabel>
+          <RegisterInput type="password" id="repeat-password" />
+        </RegisterSpan>
         <div className="flex items-start mb-6 justify-center">
           <div className="flex items-center h-5">
             <input id="terms" type="checkbox" value="" className="w-4 h-4" required />
