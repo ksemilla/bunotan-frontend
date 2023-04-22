@@ -1,4 +1,7 @@
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+    username: string
+    setusername: React.Dispatch<React.SetStateAction<string>>
+}
 
 const RegisterInput = (props: InputProps) => {
     return <div className="ml-2">

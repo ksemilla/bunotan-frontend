@@ -1,6 +1,9 @@
+import { useState } from "react"
 import { RegisterInput, RegisterLabel, RegisterSpan } from "../../components"
 
 const Register = () => {
+  const [username, setUsername] = useState<string>("hello")
+  
   return <>
     <form>
       <div className="h-screen flex flex-col h-screen justify-center">
@@ -8,7 +11,13 @@ const Register = () => {
           <RegisterLabel for="email">
             Email Address
           </RegisterLabel>
-          <RegisterInput type="email" id="email" placeholder="user@email.com" />
+          <RegisterInput 
+            type="email" 
+            id="email" 
+            placeholder="user@email.com" 
+            username={username} 
+            setusername={setUsername} 
+          />
         </RegisterSpan>
         <RegisterSpan>
           <RegisterLabel for="password">
