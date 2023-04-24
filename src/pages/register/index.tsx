@@ -1,5 +1,7 @@
 import { useState } from "react"
-import { RegisterInput, RegisterLabel, RegisterSpan } from "../../components"
+import  RegisterInput from "./components/RegisterInput"
+import  RegisterLabel from "./components/RegisterLabel"
+import RegisterSpan from "./components/RegisterSpan"
 
 const Register = () => {
   const [username, setUsername] = useState<string>("hello")
