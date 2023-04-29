@@ -1,5 +1,7 @@
 import { useState } from "react"
 import RegisterSpan from "./components/RegisterSpan"
+import MainLogo from "../../components/logo"
+import { Link } from "react-router-dom"
 
 const Register = () => {
   const [username, setUsername] = useState("")
@@ -10,6 +12,9 @@ const Register = () => {
 
   return (
     <>
+      <Link to="/">
+        <MainLogo />
+      </Link>
       <form>
         <div className="h-screen flex flex-col justify-center">
           <RegisterSpan
