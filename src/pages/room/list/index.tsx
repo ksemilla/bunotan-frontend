@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 const RoomList = () => {
   return (
@@ -9,7 +9,7 @@ const RoomList = () => {
         <Link to="2">Room 2</Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RoomList;
+export default RoomList

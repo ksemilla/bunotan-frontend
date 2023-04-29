@@ -1,6 +1,6 @@
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  inputValue: string;
-  setInputValue: React.Dispatch<React.SetStateAction<string>>;
+  inputValue: string
+  setInputValue: React.Dispatch<React.SetStateAction<string>>
 }
 
 const RegisterInput = (props: InputProps) => {
@@ -12,7 +12,7 @@ const RegisterInput = (props: InputProps) => {
     className,
     required,
     ...rest
-  } = props;
+  } = props
 
   return (
     <div className="ml-2">
@@ -24,7 +24,7 @@ const RegisterInput = (props: InputProps) => {
         required
       />
     </div>
-  );
-};
+  )
+}
 
-export default RegisterInput;
+export default RegisterInput

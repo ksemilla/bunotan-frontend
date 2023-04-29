@@ -2,9 +2,17 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-} from "react-router-dom";
+} from "react-router-dom"
 
-import { Account, Home, Register, Login, MyRooms, RoomDetail, RoomList } from "../pages";
+import {
+  Account,
+  Home,
+  Register,
+  Login,
+  MyRooms,
+  RoomDetail,
+  RoomList,
+} from "../pages"
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,4 +27,4 @@ export const router = createBrowserRouter(
       </Route>
     </Route>
   )
-);
+)

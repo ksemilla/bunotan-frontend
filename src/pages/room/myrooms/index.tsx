@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom"
 
 const MyRooms = () => {
   return (
@@ -6,7 +6,7 @@ const MyRooms = () => {
       <h1>This is room routes</h1>
       <Outlet />
     </div>
-  );
-};
+  )
+}
 
-export default MyRooms;
+export default MyRooms
