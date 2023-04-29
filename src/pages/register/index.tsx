@@ -1,48 +1,44 @@
 import { useState } from "react";
-import RegisterInput from "./components/RegisterInput";
-import RegisterLabel from "./components/RegisterLabel";
 import RegisterSpan from "./components/RegisterSpan";
 
 const Register = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [repeatPassword, setRepeatPassword] = useState("");
 
-  console.log("username", username);
+  const checkPassword = () => password == repeatPassword;
 
   return (
     <>
       <form>
         <div className="h-screen flex flex-col justify-center">
-          <RegisterSpan>
-            <RegisterLabel htmlFor="email">Email Address</RegisterLabel>
-            <RegisterInput
-              type="email"
-              id="email"
-              placeholder="user@email.com"
-              inputValue={username}
-              setInputValue={setUsername}
-              // value={username}
-              // onChange={(e) => {
-              //   setUsername(e.target.value);
-              // }}
-            />
-          </RegisterSpan>
-          <RegisterSpan>
-            <RegisterLabel htmlFor="password">Your password</RegisterLabel>
-            <RegisterInput
-              type="password"
-              id="password"
-              placeholder="min. of 8 characters"
-              inputValue={password}
-              setInputValue={setPassword}
-            />
-          </RegisterSpan>
-          <RegisterSpan>
-            <RegisterLabel htmlFor="repeat-password">
-              Repeat password
-            </RegisterLabel>
-            {/* <RegisterInput type="password" id="repeat-password" /> */}
-          </RegisterSpan>
+          <RegisterSpan
+            htmlFor="email"
+            text="Email Address"
+            type="email"
+            id="email"
+            placeholder="user@email.com"
+            inputValue={username}
+            setInputValue={setUsername}
+          />
+          <RegisterSpan
+            htmlFor="password"
+            text="Your password"
+            type="password"
+            id="password"
+            placeholder="min. of 8 characters"
+            inputValue={password}
+            setInputValue={setPassword}
+          />
+          <RegisterSpan
+            htmlFor="repeat-password"
+            text="Repeat password"
+            type="password"
+            id="repeat-password"
+            inputValue={repeatPassword}
+            setInputValue={setRepeatPassword}
+            onKeyUp={checkPassword}
+          />
           <div className="flex items-start mb-6 justify-center">
             <div className="flex items-center h-5">
               <input

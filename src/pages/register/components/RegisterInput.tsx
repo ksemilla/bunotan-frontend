@@ -13,6 +13,7 @@ const RegisterInput = (props: InputProps) => {
     required,
     ...rest
   } = props;
+
   return (
     <div className="ml-2">
       <input
