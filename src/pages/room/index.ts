@@ -1,5 +1,5 @@
-import RoomList from "./list";
-import RoomDetail from "./detail";
-import MyRooms from "./myrooms";
+import RoomList from "./list"
+import RoomDetail from "./detail"
+import MyRooms from "./myrooms"
 
-export { RoomList, RoomDetail, MyRooms };
+export { RoomList, RoomDetail, MyRooms }

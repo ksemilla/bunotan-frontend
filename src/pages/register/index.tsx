@@ -1,12 +1,12 @@
-import { useState } from "react";
-import RegisterSpan from "./components/RegisterSpan";
+import { useState } from "react"
+import RegisterSpan from "./components/RegisterSpan"
 
 const Register = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [repeatPassword, setRepeatPassword] = useState("");
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+  const [repeatPassword, setRepeatPassword] = useState("")
 
-  const checkPassword = () => password == repeatPassword;
+  const checkPassword = () => password == repeatPassword
 
   return (
     <>
@@ -77,7 +77,7 @@ const Register = () => {
         </div>
       </form>
     </>
-  );
-};
+  )
+}
 
-export default Register;
+export default Register
