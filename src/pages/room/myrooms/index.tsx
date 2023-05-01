@@ -1,11 +1,22 @@
-import { Outlet } from "react-router-dom"
+import { useState } from "react"
+import { Link, Outlet } from "react-router-dom"
+import MainLogo from "../../../components/logo"
 
 const MyRooms = () => {
+  const [username, setUsername] = useState("")
+
+  if (username == "") {
+    setUsername("Smitty Webermanjensen")
+  }
+
   return (
-    <div>
-      <h1>This is room routes</h1>
+    <>
+      <Link to="/">
+        <MainLogo />
+      </Link>
+      {username}
       <Outlet />
-    </div>
+    </>
   )
 }
 
