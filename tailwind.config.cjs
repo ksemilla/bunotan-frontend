@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         PermanentMarker: ["Permanent Marker", "cursive"],
+        Nunito: ["Nunito", "sans-serif"],
       },
     },
   },

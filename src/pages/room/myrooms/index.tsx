@@ -11,10 +11,14 @@ const MyRooms = () => {
 
   return (
     <>
-      <Link to="/">
-        <MainLogo />
-      </Link>
-      {username}
+      <span className="flex">
+        <Link to="/">
+          <MainLogo />
+        </Link>
+        <div className="p-5 font-Nunito text-2xl flex items-center">
+          Username: {username}
+        </div>
+      </span>
       <Outlet />
     </>
   )
