@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { Button } from "../../components"
-import MainLogo from "../../components/logo"
+import MainLogo from "../../components/MainLogo"
 
 const Home = () => {
   return (

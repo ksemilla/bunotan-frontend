@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link, Outlet } from "react-router-dom"
-import MainLogo from "../../../components/logo"
+import MainLogo from "../../../components/MainLogo"
 
 const MyRooms = () => {
   const [username, setUsername] = useState("")
