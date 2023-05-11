@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import MainLogo from "../../components/MainLogo"
 import RegisterSpan from "../register/components/RegisterSpan"
-import MainLogo from "../../components/logo"
 
 const Login = () => {
   const [username, setUsername] = useState("")
