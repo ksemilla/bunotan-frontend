@@ -7,7 +7,7 @@ import {
 import {
   Account,
   Home,
-  Register,
+  Signup,
   Login,
   MyRooms,
   RoomDetail,
@@ -18,10 +18,10 @@ export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
       <Route path="" element={<Home />} />
-      <Route path="register" element={<Register />} />
+      <Route path="signup" element={<Signup />} />
       <Route path="login" element={<Login />} />
       <Route path="my-account" element={<Account />} />
-      <Route path="rooms" element={<MyRooms />}>
+      <Route path="draw-lots" element={<MyRooms />}>
         <Route path="" element={<RoomList />} />
         <Route path=":var1" element={<RoomDetail />} />
       </Route>

@@ -1,7 +1,7 @@
 import Home from "./home"
 import Account from "./account"
 import Login from "./login"
-import Register from "./register"
+import Signup from "./signup"
 
-export * from "./room"
-export { Home, Account, Login, Register }
+export * from "./draw-lots"
+export { Home, Account, Login, Signup }

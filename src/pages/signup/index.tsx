@@ -1,9 +1,10 @@
 import { useState } from "react"
-import RegisterSpan from "./components/RegisterSpan"
+import HomeFormSpan from "../home/components/HomeFormSpan"
 import { Link } from "react-router-dom"
 import MainLogo from "../../components/MainLogo"
+import HomeButton from "../../components/elements/HomeButton"
 
-const Register = () => {
+const Signup = () => {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
   const [repeatPassword, setRepeatPassword] = useState("")
@@ -16,8 +17,8 @@ const Register = () => {
         <MainLogo />
       </Link>
       <form>
-        <div className="h-screen flex flex-col justify-center">
-          <RegisterSpan
+        <div className="flex flex-col justify-center">
+          <HomeFormSpan
             htmlFor="email"
             text="Email Address"
             type="email"
@@ -26,7 +27,7 @@ const Register = () => {
             inputValue={username}
             setInputValue={setUsername}
           />
-          <RegisterSpan
+          <HomeFormSpan
             htmlFor="password"
             text="Your password"
             type="password"
@@ -35,7 +36,7 @@ const Register = () => {
             inputValue={password}
             setInputValue={setPassword}
           />
-          <RegisterSpan
+          <HomeFormSpan
             htmlFor="repeat-password"
             text="Repeat password"
             type="password"
@@ -76,13 +77,16 @@ const Register = () => {
               text-center
             "
             >
-              Register new account
+              Register
             </button>
           </div>
         </div>
       </form>
+      <Link to="/login">
+        <HomeButton>Login your account</HomeButton>
+      </Link>
     </>
   )
 }
 
-export default Register
+export default Signup

@@ -3,7 +3,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   setInputValue: React.Dispatch<React.SetStateAction<string>>
 }
 
-const RegisterInput = (props: InputProps) => {
+const HomeFormInput = (props: InputProps) => {
   const {
     inputValue,
     setInputValue,
@@ -27,4 +27,4 @@ const RegisterInput = (props: InputProps) => {
   )
 }
 
-export default RegisterInput
+export default HomeFormInput

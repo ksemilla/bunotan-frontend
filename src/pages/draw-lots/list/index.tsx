@@ -38,10 +38,6 @@ const RoomList = () => {
       <RoomCard room={createSampleRoom(2)} />
       <RoomCard room={createSampleRoom(3)} />
       <RoomCard room={createSampleRoom(4)} />
-      <div>
-        <Link to="1">room 1</Link>
-        <Link to="2">Room 2</Link>
-      </div>
     </div>
   )
 }
