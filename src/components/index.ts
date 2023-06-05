@@ -1,3 +1,3 @@
-import Button from "./elements/Button"
+import HomeButton from "./elements/HomeButton"
 
-export { Button }
+export { HomeButton }

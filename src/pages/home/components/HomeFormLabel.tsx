@@ -1,6 +1,6 @@
 interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {}
 
-const RegisterLabel = (props: LabelProps) => {
+const HomeFormLabel = (props: LabelProps) => {
   return (
     <label {...props} className="font-medium text-gray-900">
       {props.children}
@@ -8,4 +8,4 @@ const RegisterLabel = (props: LabelProps) => {
   )
 }
 
-export default RegisterLabel
+export default HomeFormLabel

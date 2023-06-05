@@ -1,5 +1,5 @@
-import RegisterInput from "./RegisterInput"
-import RegisterLabel from "./RegisterLabel"
+import HomeFormInput from "./HomeFormInput"
+import HomeFormLabel from "./HomeFormLabel"
 
 interface SpanProps extends React.HTMLAttributes<HTMLSpanElement> {
   inputValue: string
@@ -9,14 +9,14 @@ interface SpanProps extends React.HTMLAttributes<HTMLSpanElement> {
   text: string
 }
 
-const RegisterSpan = (props: SpanProps) => {
+const HomeFormSpan = (props: SpanProps) => {
   const { type, id, text, htmlFor, inputValue, setInputValue, ...rest } = props
 
   return (
     <span>
       <div className="mb-6 flex items-center justify-center">
-        <RegisterLabel htmlFor={htmlFor}>{text}</RegisterLabel>
-        <RegisterInput
+        <HomeFormLabel htmlFor={htmlFor}>{text}</HomeFormLabel>
+        <HomeFormInput
           type={type}
           id={id}
           inputValue={inputValue}
@@ -28,4 +28,4 @@ const RegisterSpan = (props: SpanProps) => {
   )
 }
 
-export default RegisterSpan
+export default HomeFormSpan

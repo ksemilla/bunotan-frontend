@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
-import { Button } from "../../components"
+import { HomeButton } from "../../components"
 import MainLogo from "../../components/MainLogo"
+import LoginForm from "../login/components/LoginForm"
 
 const Home = () => {
   return (
@@ -9,11 +10,9 @@ const Home = () => {
         <MainLogo />
       </Link>
       <div className="space-y-5 flex-1 flex flex-col justify-center items-center">
-        <Link to="/register">
-          <Button>Register</Button>
-        </Link>
-        <Link to="/login">
-          <Button>Log in</Button>
+        <LoginForm />
+        <Link to="/signup">
+          <HomeButton>Create new account</HomeButton>
         </Link>
       </div>
     </div>
