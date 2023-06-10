@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import HomeFormSpan from "../../home/components/HomeFormSpan"
+import HomeFormTitle from "../../home/components/HomeFormTitle"
 
 const LoginForm = () => {
   const [username, setUsername] = useState("")
@@ -8,6 +9,7 @@ const LoginForm = () => {
 
   return (
     <>
+      <HomeFormTitle>Login your account</HomeFormTitle>
       <form>
         <div className="flex flex-col justify-center">
           <HomeFormSpan
